@@ -52,7 +52,7 @@ if sel_brand:    df = df[df["brand"].isin(sel_brand)]
 st.header("Product Performance", divider="gray")
 st.caption(
     "Revenue, pricing, and transaction breakdown across product categories and brands. "
-    "Conversion rate metrics are excluded — synthetic data produces uniform rates with no "
+    "Conversion rate metrics are excluded  -  synthetic data produces uniform rates with no "
     "meaningful variance across categories. All charts use real transaction data."
 )
 
@@ -111,7 +111,7 @@ with col1:
 
 with col2:
     st.subheader("Avg Order Value by Category")
-    st.caption("Average transaction value per category — reflects price point differences across segments.")
+    st.caption("Average transaction value per category  -  reflects price point differences across segments.")
 
     cat_aov = (
         df.groupby("category")["avg_order_value"]
@@ -142,7 +142,7 @@ col3, col4 = st.columns(2)
 
 with col3:
     st.subheader("Top 20 Products by Revenue")
-    st.caption("Highest-revenue products. Identified by product_id — no product name in source data.")
+    st.caption("Highest-revenue products. Identified by product_id  -  no product name in source data.")
 
     top20 = (
         df[df["total_revenue"] > 0]
@@ -167,7 +167,7 @@ with col3:
 
 with col4:
     st.subheader("Total Discount by Category")
-    st.caption("Total discount value applied per category — indicates promotional intensity.")
+    st.caption("Total discount value applied per category  -  indicates promotional intensity.")
 
     cat_disc = (
         df.groupby("category")["total_discount"]

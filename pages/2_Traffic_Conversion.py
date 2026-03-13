@@ -142,7 +142,7 @@ st.divider()
 # ── Row 2: Event Mix by Source ────────────────────────────────────────────────
 
 st.subheader("Event Mix by Traffic Source")
-st.caption("Breakdown of event types per traffic source — shows funnel shape across channels.")
+st.caption("Breakdown of event types per traffic source  -  shows funnel shape across channels.")
 
 event_mix = df_c.pivot_table(
     index="traffic_source",
@@ -179,7 +179,7 @@ st.divider()
 # ── Row 3: Event Volume Over Time ─────────────────────────────────────────────
 
 st.subheader("Event Volume Over Time by Traffic Source")
-st.caption("Monthly event counts per traffic source — identifies seasonal and channel trends.")
+st.caption("Monthly event counts per traffic source  -  identifies seasonal and channel trends.")
 
 df_m["event_month"] = pd.to_datetime(df_m["event_month"]).dt.to_period("M").astype(str)
 monthly_totals = df_m.groupby(["event_month", "traffic_source"])["event_count"].sum().reset_index()

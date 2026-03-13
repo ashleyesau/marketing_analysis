@@ -67,7 +67,7 @@ def apply_theme(fig, height=380):
     return fig
 
 def hbar_theme(fig, height=350):
-    """Horizontal bar — flip grid to x axis."""
+    """Horizontal bar  -  flip grid to x axis."""
     fig.update_layout(height=height, **LAYOUT_DEFAULTS)
     fig.update_xaxes(showgrid=True,  gridcolor="#f1f5f9", showline=False)
     fig.update_yaxes(showgrid=False, showline=True, linecolor="#e2e8f0")
@@ -142,7 +142,7 @@ def render_active_filters(filters: dict):
     st.markdown("**Active Filters**")
     if not filters:
         st.markdown(
-            '<div class="filter-tags"><span class="filter-tag-none">None — showing all data</span></div>',
+            '<div class="filter-tags"><span class="filter-tag-none">None  -  showing all data</span></div>',
             unsafe_allow_html=True
         )
     else:
