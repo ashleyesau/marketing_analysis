@@ -113,7 +113,7 @@ The dashboard is also deployed to Streamlit Cloud at: Unknown (not stated)
 
 ## Sub-folder READMEs
 
-- [models/staging](./models/staging/README.md) - Five staging models that clean and type-cast raw seed data before it enters the transformation pipeline
-- [models/intermediate](./models/intermediate/README.md) - Five intermediate models computing funnel steps, customer order history, cohort assignments, and product-level metrics
-- [models/marts](./models/marts/README.md) - Ten mart models producing the dimension tables and fact tables consumed by the dashboard
+- [models/staging](./marketing_analytics/models/staging/README.md) - Five staging models that clean and type-cast raw seed data before it enters the transformation pipeline
+- [models/intermediate](./marketing_analytics/models/intermediate/README.md) - Five intermediate models computing funnel steps, customer order history, cohort assignments, and product-level metrics
+- [models/marts](./marketing_analytics/models/marts/README.md) - Ten mart models producing the dimension tables and fact tables consumed by the dashboard
 - [pages](./pages/README.md) - Streamlit dashboard with five pages covering customer segmentation, traffic conversion, product performance, campaign attribution, and A/B experiment results
