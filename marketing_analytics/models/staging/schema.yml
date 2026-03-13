@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: loyalty_tier
+        tests: [not_null]
+      - name: traffic_source
+        tests: [not_null]
+
+  - name: stg_campaigns
+    columns:
+      - name: campaign_id
+        tests: [not_null, unique]
+
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests: [not_null, unique]
+
+  - name: stg_events
+    columns:
+      - name: event_id
+        tests: [not_null, unique]
+      - name: session_id
+        tests: [not_null]
+      - name: event_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['browse', 'click', 'add_to_cart', 'purchase', 'view', 'bounce']
+
+  - name: stg_transactions
+    columns:
+      - name: transaction_id
+        tests: [not_null, unique]

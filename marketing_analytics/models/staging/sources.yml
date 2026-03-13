@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: dev
+    schema: dev
+    tables:
+      - name: campaigns
+      - name: customers
+      - name: events
+      - name: products
+      - name: transactions

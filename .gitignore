@@ -1,0 +1,7 @@
+*.duckdb.wal
+venv/
+logs/
+target/
+dbt_packages/
+marketing_analytics/models/example/
+marketing_analytics/seeds/*.csv
