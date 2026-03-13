@@ -5,3 +5,6 @@ target/
 dbt_packages/
 marketing_analytics/models/example/
 marketing_analytics/seeds/*.csv
+__pycache__/
+*.pyc
+logs/
